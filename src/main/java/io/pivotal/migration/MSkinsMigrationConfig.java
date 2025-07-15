@@ -36,7 +36,7 @@ public class MSkinsMigrationConfig {
 
 	@Bean
 	public MilestoneFilter milestoneFilter(@Value("${jira.component}") String componentName) {
-		return fixVersion -> fixVersion.getName().startsWith(componentName.toLowerCase(Locale.ROOT));
+		return fixVersion -> fixVersion.getName().startsWith("fluido");
 	}
 
 	@Bean
